@@ -382,48 +382,4 @@ form input[type="submit"] {
     src: url('fonts/Eater/Eater-Regular.ttf') format('truetype');
 }
 
-@media (max-width: 768px) {
-    /* Redefine los estilos para el encabezado y el contenido principal en pantallas más pequeñas */
-    header {
-        position: static; /* Hace que el encabezado no sea fijo en pantallas pequeñas */
-        background-color: #190001ff; /* Puedes ajustar el color de fondo si es necesario */
-    }
-    
-    main {
-        margin-top: 0; /* Elimina el margen superior para que el contenido principal se muestre correctamente en pantallas pequeñas */
-    }
-}
-/* Media Query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    /* Redefine los estilos para el encabezado en pantallas más pequeñas */
-    header {
-        position: static;
-    }
-
-    /* Redefine los estilos para el menú de navegación en pantallas más pequeñas */
-    nav {
-        display: block;
-        text-align: center;
-        background-color: #190001ff;
-        padding: 10px;
-        margin: 0;
-    }
-
-    /* Ajusta el tamaño del texto en la Media Query */
-    h1 {
-        font-size: 40px; /* Cambia el tamaño del título h1 */
-    }
-
-    /* Ajusta el tamaño de otros elementos de texto en la Media Query si es necesario */
-    /* p {
-        font-size: 16px;
-    } */
-
-    /* ... (otros estilos de texto) ... */
-
-    /* Ajusta otros estilos para evitar superposición de elementos si es necesario */
-    /* .elemento {
-        margin: 10px;
-    } */
-}
 
