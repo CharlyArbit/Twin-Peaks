@@ -26,9 +26,9 @@ body {
     background-color: #B8B296ff;
     margin: 0;
     padding: 0;
-    background-image: url('images/Index2.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo del body */
-    background-position: center; /* Coloca la imagen en el centro del fondo */
+    background-image: url('images/Index2.jpg');
+    background-size: cover;
+    background-position: center; 
     background-repeat: no-repeat;
     margin-bottom: 0em;
     display: flex;
@@ -166,27 +166,27 @@ section {
     color: #B8B296ff;
 }
 .dropdown-container {
-    max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
-    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido supera la altura máxima */
+    max-height: 300px; 
+    overflow-y: auto; 
 }
 
 /* Estilos para el tipo de artículo con imagen a la izquierda */
 .article-left {
-    border: 0.2vw solid #B8B296ff; /* Borde con el color deseado */
-    border-radius: 10px; /* Borde redondeado */
-    padding: 2%; /* Espaciado interno para el contenido */
-    margin: 2%; /* Espacio entre los elementos */
-    display: flex; /* Usa flexbox para alinear imagen y texto */
-    align-items: center; /* Centra verticalmente el contenido */
-    width: 50%; /* Establece el ancho en 50% del contenedor padre */
-    margin: 0 auto; /* Centra horizontalmente */
+    border: 0.2vw solid #B8B296ff; 
+    border-radius: 10px; 
+    padding: 2%; 
+    margin: 2%; 
+    display: flex; 
+    align-items: center; 
+    width: 50%; 
+    margin: 0 auto; 
     height: auto;
     background-color: #190001ff;
 }
 
 .article-left img {
     width: 180%; /* Tamaño de la imagen */
-    margin-right: 0%; /* Espacio entre la imagen y el texto */
+    margin-right: 0%;
 }
 article.article-left img {
     vertical-align: top;
@@ -197,7 +197,7 @@ article.article-left img {
 
 /* Estilos para el contenedor del texto */
 .article-left .text-container {
-    flex-grow: 1; /* Permite que el contenedor del texto se expanda para ocupar el espacio restante */
+    flex-grow: 1; 
     margin-left: 10%;
 }
 
@@ -208,13 +208,13 @@ article.article-left img {
 
 /* Estilos para los divs dentro del artículo */
 .article-left div{
-    margin-left: 3%; /* Agrega margen a la izquierda para separar los divs */
+    margin-left: 3%;
     margin-right: 3%;
     
 }
 
 .text-container {
-    width: 200%; /* Puedes ajustar el ancho deseado en porcentaje o píxeles */
+    width: 200%; 
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -243,10 +243,10 @@ article.article-left img {
 
 /* Estilos para la imagen en el nuevo tipo de artículo */
 .article-with-title img {
-    max-width: 400%; /* Tamaño máximo de la imagen (ajusta según tus necesidades) */
+    max-width: 400%;
     margin-right: 2%;
     margin-top: 30%;
-    margin-bottom: 30%; /* Espacio entre la imagen y el texto */
+    margin-bottom: 30%; 
 }
 
 /* Estilos para el contenedor del texto en el nuevo tipo de artículo */
@@ -274,7 +274,7 @@ footer {
     padding: 0.5%;
     text-align: center;
     margin-top: auto;
-    transition: bottom 0.5s; /* Agrega una transición suave para el efecto de despliegue */
+    transition: bottom 0.5s; 
 }
 
 .contacto-page footer {
@@ -291,19 +291,19 @@ footer {
 
 /* Estilos del formulario */
 form {
-    max-width: 600px; /* Ajusta el ancho máximo del formulario según tus preferencias */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
-    padding: 20px; /* Espaciado interno para el formulario */
-    position: relative; /* Asegura que el formulario aparezca sobre el fondo */
-    top: 20vh; /* Ajusta la posición vertical según tus preferencias */
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    position: relative; 
+    top: 20vh; 
 }
 
 /* Estilos para los campos de entrada y etiquetas */
 form label {
     display: block;
     margin-bottom: 10px;
-    font-weight: bold; /* Hace que las etiquetas sean negritas */
-    color: #B8B296ff; /* Color del texto de la etiqueta */
+    font-weight: bold;
+    color: #B8B296ff; 
 }
 
 form input[type="text"],
@@ -316,12 +316,12 @@ form textarea {
     border-radius: 5px;
     font-family: 'Megrim', sans-serif;
     font-size: 1vw;
-    color: #B8B296ff; /* Color del texto de entrada */
+    color: #B8B296ff;
     background-color: transparent;
 }
 
 form textarea {
-    height: 150px; /* Ajusta la altura del campo de texto según tus preferencias */
+    height: 150px;
     background-color: transparent;
 }
 
