@@ -76,6 +76,10 @@ h1 {
     z-index: 2; 
 }
 
+p {
+    text-align: justify;
+}
+
 /* Estilos del menú de navegación */
 nav {
     font-size: 1.2vw;
@@ -164,9 +168,10 @@ section {
     background-size: cover;
     background-position: center;
     color: #B8B296ff;
+    padding-bottom: 10%;
 }
 .dropdown-container {
-    max-height: 300px; 
+    max-height: 500px; 
     overflow-y: auto; 
 }
 
