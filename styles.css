@@ -298,9 +298,11 @@ footer {
 
 /* Estilos del formulario */
 form {
-    max-width: 600px;
-    margin: 0 auto; 
-    padding: 20px;
+    max-width: 60%;
+    margin: 20%; 
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: 5%;
     position: relative; 
     top: 20vh; 
 }
@@ -328,7 +330,7 @@ form textarea {
 }
 
 form textarea {
-    height: 150px;
+    height: 100px;
     background-color: transparent;
 }
 
