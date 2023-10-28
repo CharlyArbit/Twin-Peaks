@@ -390,6 +390,15 @@ form input[type="submit"] {
     font-family: 'Eater';
     src: url('fonts/Eater/Eater-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway/static//Raleway-ExtraLightItalic.ttf')format('truetype');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald/static/Oswald-ExtraLight.ttf')format('truetype');
+}
+
 
 
 @media screen and (max-width: 480px) {
@@ -402,6 +411,7 @@ form input[type="submit"] {
     /* Estilos del encabezado */
     header {
         background-color: #190001ff;
+        font-size: 18px; 
         color: #B8B296ff;
         padding: 4%;
         position: fixed;
@@ -412,8 +422,8 @@ form input[type="submit"] {
     }
 
     body {
-        font-size: 14px; 
-        font-family: 'Megrim', sans-serif;
+        font-size: 16px; 
+        font-family: 'Oswald', sans-serif;
         background-color: #B8B296ff;
         margin: 0;
         padding: 0;
@@ -574,7 +584,7 @@ form textarea {
     margin-bottom: 15px;
     border: 1px solid #B8B296ff;
     border-radius: 5px;
-    font-family: 'Megrim', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 4vw;
     color: #B8B296ff;
     background-color: transparent;
@@ -591,7 +601,7 @@ form input[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-family: 'Megrim', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 4vw;
     cursor: pointer;
     padding-bottom: 10vw;
