@@ -336,11 +336,14 @@ form textarea {
 
 form input[type="submit"] {
     background-color: transparent;
+    font-family: 'Megrim';
+    font-size: 2vw;
     color: #B8B296ff;
-    padding: 10px 20px;
+    padding: 0px 0px;
     border: none;
     border-radius: 5px;
-    font-size: 1vw;
+    font-size: 1.4vw;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -366,33 +369,10 @@ form input[type="submit"] {
     margin-top: 15px;
 }
 
-@font-face {
-    font-family: 'Butcherman';
-    src: url('fonts/Butcherman/Butcherman-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Rubik_Dirt';
-    src: url('fonts/Rubik_Dirt/RubikDirt-Regular.ttf') format('truetype');
-}
+
 @font-face {
     font-family: 'Megrim';
     src: url('fonts/Megrim/Megrim-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Lato';
-    src: url('fonts/Lato/Lato-Black.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Frijole';
-    src: url('fonts/Frijole/Frijole-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Eater';
-    src: url('fonts/Eater/Eater-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway/static//Raleway-ExtraLightItalic.ttf')format('truetype');
 }
 @font-face {
     font-family: 'Oswald';
@@ -560,13 +540,14 @@ form input[type="submit"] {
     
     /* Estilos del formulario */
 form {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto; 
     padding: 0px;
     position: relative; 
     top: 20vh; 
     padding-bottom: 30%;
 }
+
 
 /* Estilos para los campos de entrada y etiquetas */
 form label {
@@ -585,13 +566,13 @@ form textarea {
     border: 1px solid #B8B296ff;
     border-radius: 5px;
     font-family: 'Oswald', sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #B8B296ff;
     background-color: transparent;
 }
 
 form textarea {
-    height: 150px;
+    height: 120px;
     background-color: transparent;
 }
 
@@ -602,6 +583,7 @@ form input[type="submit"] {
     border: none;
     border-radius: 5px;
     font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-size: 4vw;
     cursor: pointer;
     padding-bottom: 10vw;
