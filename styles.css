@@ -22,7 +22,7 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Megrim', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: #B8B296ff;
     margin: 0;
     padding: 0;
@@ -323,7 +323,7 @@ form textarea {
     margin-bottom: 15px;
     border: 1px solid #B8B296ff;
     border-radius: 5px;
-    font-family: 'Megrim', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1vw;
     color: #B8B296ff;
     background-color: transparent;
@@ -336,7 +336,7 @@ form textarea {
 
 form input[type="submit"] {
     background-color: transparent;
-    font-family: 'Megrim';
+    font-family: 'Oswald';
     font-size: 2vw;
     color: #B8B296ff;
     padding: 0px 0px;
