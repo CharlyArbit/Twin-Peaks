@@ -1,25 +1,3 @@
-/* Colores */
-
-/* --moss-green: #9EA065ff;
---black: #070708ff;
---eerie-black: #1B1C14ff;
---sage: #B8B296ff;
---khaki: #BBAC9Cff;
---columbia-blue: #C9D7E2ff; 
---black-bean: #370201ff;
---rosewood: #520B07ff;
---barn-red: #7B0001ff;
---rosewood-2: #510203ff;
---smoky-black: #070200ff;
---black-bean-2: #430100ff;
---licorice: #140200ff;
---licorice-2: #190001ff;
---black: #050301ff;
---barn-red-2: #7A0204ff;
---black-bean: #4D100Eff;
---pearl: #EBDFC4ff;
---chocolate-cosmos: #500F0Dff;*/
-
 /* Estilos generales */
 body {
     font-family: 'Oswald', sans-serif;
@@ -242,13 +220,13 @@ article.article-left img {
     padding: 2%;
     margin: 0 auto;
     display: flex;
-    width: 75%;
+    width: 50%;
     background-color: #190001ff;
 }
 
 /* Estilos para la imagen en el nuevo tipo de artículo */
 .article-with-title img {
-    max-width: 400%;
+    max-width: 200%;
     margin-right: 2%;
     margin-top: 30%;
     margin-bottom: 30%; 
@@ -295,6 +273,18 @@ footer {
     text-align: center;
 }
 
+/* Agrega estilos para el formulario-container */
+.formulario-container {
+    text-align: center;
+    padding: 0px;
+}
+
+.formulario-container h2 {
+    font-size: 2vw;
+    margin-bottom: 40px; 
+    color: #B8B296ff;
+}
+
 
 /* Estilos del formulario */
 form {
@@ -305,6 +295,10 @@ form {
     padding-bottom: 5%;
     position: relative; 
     top: 20vh; 
+    text-align: left; 
+}
+form h2 {
+    text-align: center;
 }
 
 /* Estilos para los campos de entrada y etiquetas */
@@ -379,7 +373,83 @@ form input[type="submit"] {
     src: url('fonts/Oswald/static/Oswald-ExtraLight.ttf')format('truetype');
 }
 
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+    h2 {
+        font-size: 2vw;
+    }
 
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+    }
+
+    .article-left {
+        border: 0.2vw solid #B8B296ff; 
+        border-radius: 10px; 
+        padding: 2%; 
+        margin: 2%; 
+        display: flex; 
+        align-items: center; 
+        width: 50%; 
+        margin: 0 auto; 
+        height: auto;
+        background-color: #190001ff;
+    }
+
+    .article-left img {
+        width: 130%; 
+        margin: 0%;
+    }
+
+    .article-left p{
+        font-size: 1.3vw;
+        margin-bottom: 2%;
+        margin-left: 2%;
+    }
+    .article-left h3{
+        font-size: 1.5vw;
+        margin-bottom: 2%;
+        margin-left: 2%;
+    }
+    .article-with-title {
+        border: 0.15vw solid #B8B296ff;
+        border-radius: 10px;
+        padding: 2%;
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+        background-color: #190001ff;
+    }
+    
+    /* Estilos para la imagen en el nuevo tipo de artículo */
+    .article-with-title img {
+        max-width: 200%;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 30%;
+        margin-bottom: 30%; 
+    }
+
+    .article-left p{
+        font-size: 1.5vw;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    
+    /* Estilos para el contenedor del texto en el nuevo tipo de artículo */
+    .article-with-title .text-container {
+        flex-grow: 1;
+    }
+    
+    .article-with-title h2 {
+        font-size: 1.6vw;
+        margin-bottom: 1%;
+    }
+}
 
 @media screen and (max-width: 480px) {
     
@@ -510,33 +580,43 @@ form input[type="submit"] {
         padding-bottom: 10%;
     }
 
-    .article-with-title {
-        border: 0.15vw solid #B8B296ff;
-        border-radius: 10px;
-        padding: 2%;
-        margin: 0 auto;
-        display: flex;
-        width: 75%;
-        background-color: #190001ff;
-    }
-    
-    /* Estilos para la imagen en el nuevo tipo de artículo */
-    .article-with-title img {
-        max-width: 125%;
-        margin-right: 2%;
-        margin-top: 30%;
-        margin-bottom: 30%; 
-    }
-    
-    /* Estilos para el contenedor del texto en el nuevo tipo de artículo */
-    .article-with-title .text-container {
-        flex-grow: 0.5;
-    }
-    
-    .article-with-title h2 {
-        font-size: 1.6vw;
-        margin-bottom: 1%;
-    }
+    /* Estilos para el nuevo tipo de artículo con título en la parte superior */
+.article-with-title {
+    border: 0.15vw solid #B8B296ff;
+    border-radius: 10px;
+    padding: 4%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: #190001ff;
+}
+
+/* Estilos para la imagen en el nuevo tipo de artículo */
+.article-with-title img {
+    max-width: 100%;
+    margin: 0;
+}
+.text-container p {
+    font-size: 2.5vw;
+    text-align: left; /* Aumenta el tamaño de fuente de los párrafos dentro de text-container */
+}
+
+/* Estilos para el contenedor del texto en el nuevo tipo de artículo */
+.article-with-title .text-container {
+    flex-grow: 1;
+    text-align: left;
+    width: 100%; /* Asegura que el contenedor de texto ocupe todo el ancho disponible */
+    padding: 10px 10px; /* Agrega un espacio alrededor del texto para evitar desbordamientos */
+    margin: 5px;
+}
+
+.article-with-title h2 {
+    font-size: 3.6vw;
+    margin-bottom: 1%;
+}
+
     
     /* Estilos del formulario */
 form {
@@ -546,6 +626,11 @@ form {
     position: relative; 
     top: 20vh; 
     padding-bottom: 30%;
+    text-align: left;
+}
+
+form h2 {
+    text-align: center;
 }
 
 
