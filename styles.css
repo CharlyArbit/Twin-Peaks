@@ -586,6 +586,23 @@ form input[type="submit"] {
         margin-top: 0px 0;
         background-color: #410d0d55;
     }
+
+    .nav-menu .dropdown-content {
+        width: 140px; /* Ajusta el ancho según tus necesidades */
+    }
+
+    li.dropdown-container {
+        height: 200px;
+        padding: 3%;
+    }
+    li {
+        padding: 2%;
+    }
+
+    li.dropdown{
+        padding: 2%;
+    }
+    
     
 
     .article-left {
