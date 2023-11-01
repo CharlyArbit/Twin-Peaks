@@ -1,11 +1,10 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Temporada 1 Twin Peaks</title>
-    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Twin Peaks</title>
 </head>
 <body>
     <header>
@@ -14,7 +13,12 @@
                 <img src="images/logosinfondo.png" alt="Logo de Mi Sitio Web">
             </a>
             <h1>Twin Peaks</h1>
-            <ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Personajes</a>
                     <ul class="dropdown-content">
@@ -109,5 +113,14 @@
         </div>
     </footer>
     <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

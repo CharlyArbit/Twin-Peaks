@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Contacto</title>
+    <title>Twin Peaks</title>
 </head>
-<body class="contacto-page">
+<body>
     <header>
         <nav>
             <a href="index.html" class="logo">
                 <img src="images/logosinfondo.png" alt="Logo de Mi Sitio Web">
             </a>
             <h1>Twin Peaks</h1>
-            <ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Personajes</a>
                     <ul class="dropdown-content">
@@ -22,14 +27,13 @@
                             <li><a href="DepartamentodePolicia.html">Departamento de Policía</a></li>
                             <li><a href="Palmer.html">Los Palmer</a></li>
                             <li><a href="Hayward.html">Los Hayward</a></li>
-                            <li><a href="Horne.html">Los Horne	</a></li>
+                            <li><a href="Horne.html">Los Horne</a></li>
                             <li><a href="Packard.html">Familia Packard/Martell</a></li>
                             <li><a href="Briggs.html">Los Briggs</a></li>
                             <li><a href="Hurley.html">Los Hurley</a></li>
                             <li><a href="Otros.html">Otros Personajes</a></li>
-                            <li><a href="Habitantes.html">Habitantes de las casas</a></li> 
+                            <li><a href="Habitantes.html">Habitantes de las casas</a></li>
                         </div>
-                        
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -55,16 +59,16 @@
         </nav>
     </header>
     <div class="formulario-container">
-        <form action="procesar_formulario.php" method="post">
+        <form >
             <h2>Contacto</h2>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" >
 
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" >
 
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" ></textarea>
 
             <input type="submit" value="Enviar">
         </form>
@@ -77,5 +81,14 @@
             <a href="https://www.youtube.com/channel/UCJFCmrB4hr_mBMwzg3vGrsQ" target="_blank"><img src="images/iconos/icons8-youtube-play-96.png" alt="Youtube"></a>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

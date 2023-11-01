@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Twin Peaks</title>
-    <link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -14,7 +13,12 @@
                 <img src="images/logosinfondo.png" alt="Logo de Mi Sitio Web">
             </a>
             <h1>Twin Peaks</h1>
-            <ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Personajes</a>
                     <ul class="dropdown-content">
@@ -23,14 +27,13 @@
                             <li><a href="DepartamentodePolicia.html">Departamento de Policía</a></li>
                             <li><a href="Palmer.html">Los Palmer</a></li>
                             <li><a href="Hayward.html">Los Hayward</a></li>
-                            <li><a href="Horne.html">Los Horne	</a></li>
+                            <li><a href="Horne.html">Los Horne</a></li>
                             <li><a href="Packard.html">Familia Packard/Martell</a></li>
                             <li><a href="Briggs.html">Los Briggs</a></li>
                             <li><a href="Hurley.html">Los Hurley</a></li>
                             <li><a href="Otros.html">Otros Personajes</a></li>
-                            <li><a href="Habitantes.html">Habitantes de las casas</a></li> 
+                            <li><a href="Habitantes.html">Habitantes de las casas</a></li>
                         </div>
-                        
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -84,5 +87,14 @@
         </div>
     </footer>
     <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
