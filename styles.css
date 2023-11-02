@@ -588,7 +588,7 @@ form input[type="submit"] {
     }
 
     .nav-menu .dropdown-content {
-        width: 140px; /* Ajusta el ancho según tus necesidades */
+        width: 140px; 
     }
 
     li.dropdown-container {
